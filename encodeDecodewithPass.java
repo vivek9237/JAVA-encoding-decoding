@@ -20,11 +20,11 @@ public class AsciiEncoding {
 		Scanner in = new Scanner(System.in);
         Console console = System.console();
 
-		System.out.println("Drag the File Here and Press Enter :");
-		String address = in.nextLine();
+		//System.out.println("Drag the File Here and Press Enter :");
+		String address = args[0];//in.nextLine();
 		String text = read(address);
-		System.out.println("Action(encode/decode):");
-		String action= in.nextLine();
+		//System.out.println("Action(encode/decode):");
+		String action= args[1];//in.nextLine();
 		System.out.println("Enter Password : ");
 //		String pass = in.nextLine();
 		char[] passwordChars = console.readPassword();
